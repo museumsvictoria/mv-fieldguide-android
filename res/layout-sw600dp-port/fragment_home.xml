@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+            android:src="@drawable/background_phone" />
+<!--  
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/park_sub_title"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#9ff3f3"
+        android:shadowColor="#2cb0b3"
+        android:shadowRadius=".9"
+        android:shadowDx="0"
+        android:shadowDy="-1"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/park_field_guide"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d7fafa"
+        android:textSize="74sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_marginTop="92dp"
+        android:text="@string/park_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#9ff3f3"
+        android:textSize="68sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="105dp"
+        android:paddingRight="105dp"
+        android:paddingTop="10dp"
+        android:text="@string/park_summary"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="23dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="65dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_mv" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignRight="@+id/textView3"
+        android:adjustViewBounds="true"
+        android:maxWidth="57dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_mv" />
+         
+-->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="105dp"
+        android:paddingRight="105dp"
+        android:paddingTop="10dp"
+        android:text="@string/park_summary"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#252525"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+                <!-- Distribution map -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/roundedbox"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:text="Distribution Map" />
+
+                    <include layout="@layout/horizontalline" />
+
+                    <ImageView
+                        android:id="@+id/distributionImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="215dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:contentDescription="Distribution map of species" />
+
+                    <TextView
+                        android:id="@+id/sdDistribution"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Distribution details" />
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundedbox"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SpeciesDetailsSubheading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="About Distribution" />
+
+            <include layout="@layout/horizontalline" />
+
+            <TextView
+                android:id="@+id/distributionInfo"
+                style="@style/SpeciesDetailsText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/distributioninfo"
+                android:textColorLink="@color/headingText" />
+        </LinearLayout>
+                
+        <!-- Commonly Seen -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/roundedbox"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SpeciesDetailsSubheading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Commonly Seen" />
+
+            <include layout="@layout/horizontalline" />
+
+            <ImageView
+                android:id="@+id/locationImage"
+                android:layout_width="280dp"
+                android:layout_height="215dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="Location image"
+                android:src="@drawable/specieslocation_background" />
+        </LinearLayout>
+
+        <!-- Depth -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbox"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SpeciesDetailsSubheading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Depth" />
+
+            <include layout="@layout/horizontalline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" >
+
+                <ImageView
+                    android:id="@+id/depthShoreImage"
+                    android:layout_width="77dp"
+                    android:layout_height="84dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Shore image"
+                    android:src="@drawable/depth_shore_01" />
+
+                <ImageView
+                    android:id="@+id/depthShallowImage"
+                    android:layout_width="77dp"
+                    android:layout_height="84dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Shallow image"
+                    android:src="@drawable/depth_shallow_01" />
+
+                <ImageView
+                    android:id="@+id/depthDeepImage"
+                    android:layout_width="77dp"
+                    android:layout_height="84dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Deep image"
+                    android:src="@drawable/depth_deep_01" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

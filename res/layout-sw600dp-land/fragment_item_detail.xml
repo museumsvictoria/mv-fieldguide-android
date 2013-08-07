@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#252525"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/speciesimages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+                    <TextView
+                        android:id="@+id/sdCommonname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Common name"
+                        android:textColor="@color/headingText"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sdSpeciesname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="scientific name"
+                        android:textColor="@color/headingText"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+
+                    <View
+                        android:id="@+id/horizontalline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/headingText" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:baselineAligned="false" >
+
+            <!-- start details -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:paddingBottom="100dp"
+                android:orientation="vertical" >
+
+                <!--  
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp" >
+                -->
+
+                    <!-- otherNames -->
+
+                    <TextView
+                        android:id="@+id/otherNamesLabel"
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="otherNamesLabel"
+                        android:text="Other Common Names" />
+
+                    <TextView
+                        android:id="@+id/sdOtherNames"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Other Common Names list" />
+
+                    <!-- Identifying Characteristics -->
+
+                    <TextView
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Identifying Characteristics" />
+
+                    <TextView
+                        android:id="@+id/sdDescription"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Strongly laterally flattened species, with spikes along the edge of some of the segments of the abdomen and edges of the abdominal side-plates. Seven pairs of legs, first two chelate (with claws). Pale pink to bright red. Up to 20 mm long." />
+
+                    <!-- Biology -->
+
+                    <TextView
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biology" />
+
+                    <TextView
+                        android:id="@+id/sdBiology"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biology info" />
+
+                    <!-- Diet -->
+
+                    <TextView
+                        android:id="@+id/dietLabel"
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="dietLabel"
+                        android:text="Diet" />
+
+                    <TextView
+                        android:id="@+id/sdDiet"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diet info" />
+
+                    <!-- Habitat -->
+
+                    <TextView
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Habitat" />
+
+                    <TextView
+                        android:id="@+id/sdHabitat"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Habitat info" />
+
+                    <!-- Bite -->
+
+                    <TextView
+                        android:id="@+id/biteLabel"
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="biteLabel"
+                        android:text="Harmful" />
+
+                    <TextView
+                        android:id="@+id/sdBite"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harmful info" />
+
+                    <!-- Native Status -->
+
+                    <TextView
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Global Dispersal" />
+
+                    <TextView
+                        android:id="@+id/sdNativeStatus"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Native Status info" />
+
+        <!-- Butterfly flights -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="commercialLabel"
+            android:id="@+id/flightLabel"
+            android:text="Flight times" />
+
+        <TextView
+            android:id="@+id/sdFlight"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Everyday I'm shuffling." />
+                    
+                    <!-- Commercial Species -->
+
+                    <TextView
+                        android:id="@+id/commercialLabel"
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="commercialLabel"
+                        android:text="Commercial Species" />
+
+                    <TextView
+                        android:id="@+id/sdCommercial"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Commercial Species info" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/roundedbox"
+                        android:padding="0.5dp" >
+
+                        <TableRow style="@style/tablerowstyle" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsSubheading"
+                                android:paddingTop="2dp"
+                                android:text="Taxonomy" />
+                        </TableRow>
+
+                        <TableRow style="@style/tablerowstylealt" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsText"
+                                android:text="Phylum:" />
+
+                            <TextView
+                                android:id="@+id/sdTaxaPhylum"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phylum" />
+                        </TableRow>
+
+                        <TableRow style="@style/tablerowstyle" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsText"
+                                android:text="Class:" />
+
+                            <TextView
+                                android:id="@+id/sdTaxaClass"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Class" />
+                        </TableRow>
+
+                        <TableRow style="@style/tablerowstylealt" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsText"
+                                android:text="Order:" />
+
+                            <TextView
+                                android:id="@+id/sdTaxaOrder"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Order" />
+                        </TableRow>
+
+                        <TableRow style="@style/tablerowstyle" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsText"
+                                android:text="Family:" />
+
+                            <TextView
+                                android:id="@+id/sdTaxaFamily"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Family" />
+                        </TableRow>
+
+                        <TableRow style="@style/tablerowstylealt" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsText"
+                                android:text="Genus:" />
+
+                            <TextView
+                                android:id="@+id/sdTaxaGenus"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Genus"
+                                android:textStyle="italic" />
+                        </TableRow>
+
+                        <TableRow style="@style/tablerowstyle" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsText"
+                                android:text="Species:" />
+
+                            <TextView
+                                android:id="@+id/sdTaxaSpecies"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Species"
+                                android:textStyle="italic" />
+                        </TableRow>
+
+            <TableRow style="@style/tablerowstylealt" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Subspecies:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaSubspecies"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subspecies"
+                    android:textStyle="italic" />
+            </TableRow>
+                        </TableLayout>
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <!-- end details -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- start location - ->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical" >
+
+                        <!- - Commonly Seen - ->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/roundedbox"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsSubheading"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="Commonly Seen" />
+
+                            <include layout="@layout/horizontalline" />
+
+                            <ImageView
+                                android:id="@+id/locationImage"
+                                android:layout_width="280dp"
+                                android:layout_height="215dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp"
+                                android:contentDescription="Location image"
+                                android:src="@drawable/specieslocation_background" />
+                        </LinearLayout>
+
+                        <!- - Depth - ->
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundedbox"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsSubheading"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="Depth" />
+
+                            <include layout="@layout/horizontalline" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp" >
+
+                                <ImageView
+                                    android:id="@+id/depthShoreImage"
+                                    android:layout_width="77dp"
+                                    android:layout_height="84dp"
+                                    android:layout_weight="1"
+                                    android:contentDescription="Shore image"
+                                    android:src="@drawable/depth_shore_01" />
+
+                                <ImageView
+                                    android:id="@+id/depthShallowImage"
+                                    android:layout_width="77dp"
+                                    android:layout_height="84dp"
+                                    android:layout_weight="1"
+                                    android:contentDescription="Shallow image"
+                                    android:src="@drawable/depth_shallow_01" />
+
+                                <ImageView
+                                    android:id="@+id/depthDeepImage"
+                                    android:layout_width="77dp"
+                                    android:layout_height="84dp"
+                                    android:layout_weight="1"
+                                    android:contentDescription="Deep image"
+                                    android:src="@drawable/depth_deep_01" />
+                            </LinearLayout>
+                        </LinearLayout>
+                </LinearLayout>
+
+                <!- - end location -->
+                
+                <!-- Distinctive Markings -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/roundedbox"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:text="Distinctive Markings" />
+
+                    <include layout="@layout/horizontalline" />
+
+                    <TextView
+                        android:id="@+id/sdDistinctive"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Distinctive Markings" />
+                </LinearLayout>
+                
+                <!-- Distribution map -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/roundedbox"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/heading_distribution"
+                        style="@style/SpeciesDetailsSubheading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:drawableRight="@drawable/icon_info"
+                                android:onClick="displayInfo"
+                                android:clickable="true"
+                        android:text="Distribution Map" />
+
+                    <include layout="@layout/horizontalline" />
+
+                    <ImageView
+                        android:id="@+id/distributionImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="215dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:contentDescription="Distribution map of species" />
+
+                    <TextView
+                        android:id="@+id/sdDistribution"
+                        style="@style/SpeciesDetailsText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Distribution details" />
+                </LinearLayout>
+                
+
+
+                <!-- start scarcity -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--  
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/roundedbox"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/heading_threatened_status"
+                                style="@style/SpeciesDetailsSubheading"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="Threatened Status"
+                                android:drawableRight="@drawable/icon_info"
+                                android:onClick="displayInfo"
+                                android:clickable="true"
+                                />
+                            
+                            <include layout="@layout/horizontalline" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/roundedbox"
+                                android:orientation="vertical"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="7dp" >
+
+                                <!-- DSE -->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:id="@+id/imageView1"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:src="@drawable/icon_local" />
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="8dp"
+                                        android:paddingTop="10dp" >
+
+                                        <!--
+                        <ProgressBar
+                            android:id="@+id/statusViewDSE"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="15dp"
+                            android:max="100"
+                            android:progress="20"
+                            android:progressDrawable="@drawable/threat_status_critically_endangered" />
+                                        -->
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15dp"
+                                            android:background="@drawable/threat_status_background" >
+
+                                            <View
+                                                android:id="@+id/statusViewDSE"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:background="@drawable/threat_status_not_listed" >
+                                            </View>
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/statusTextDSE"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:text="Not Listed"
+                                            android:textSize="10dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- EPBC -->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:src="@drawable/icon_country" />
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="8dp"
+                                        android:paddingTop="10dp" >
+
+                                        <!--
+                        <ProgressBar
+                            android:id="@+id/statusViewEPBC"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="15dp"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressDrawable="@drawable/threat_status_vulnerable" />
+                                        -->
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15dp"
+                                            android:background="@drawable/threat_status_background" >
+
+                                            <View
+                                                android:id="@+id/statusViewEPBC"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:background="@drawable/threat_status_not_listed" >
+                                            </View>
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/statusTextEPBC"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:text="Not Listed"
+                                            android:textSize="10dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- IUCN -->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="42dp"
+                                        android:layout_height="42dp"
+                                        android:src="@drawable/icon_world" />
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="8dp"
+                                        android:paddingTop="10dp" >
+
+                                        <!--
+                        <ProgressBar
+                            android:id="@+id/statusViewIUCN"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="15dp"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressDrawable="@drawable/threat_status_not_listed" />
+                                        -->
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15dp"
+                                            android:background="@drawable/threat_status_background" >
+
+                                            <View
+                                                android:id="@+id/statusViewIUCN"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:background="@drawable/threat_status_not_listed" >
+                                            </View>
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/statusTextIUCN"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:text="Not Listed"
+                                            android:textSize="10sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                            <!-- 
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/roundedbox"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/SpeciesDetailsSubheading"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="About Threatened Status" />
+
+                            <include layout="@layout/horizontalline" />
+
+                            <TextView
+                                android:id="@+id/tstatusInfo"
+                                style="@style/SpeciesDetailsText"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/threatenedstatusinfo"
+                                android:textColorLink="@color/headingText" />
+                        </LinearLayout>
+                            -->
+                    <!-- </LinearLayout> -->
+                </LinearLayout>
+
+                <!-- end scarcity -->
+
+            </LinearLayout>
+        </LinearLayout> <!-- image and content wrapper -->
+
+    </LinearLayout>
+
+</ScrollView>

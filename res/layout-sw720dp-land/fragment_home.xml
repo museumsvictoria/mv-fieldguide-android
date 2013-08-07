@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_tablet" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="350dp"
+        android:paddingRight="350dp"
+        android:paddingTop="10dp"
+        android:text="@string/park_summary"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+    
+</RelativeLayout>

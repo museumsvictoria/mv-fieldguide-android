@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- park specific -->
+    <string name="park_title">Victoria</string>
+    <string name="park_sub_title">Marine National Park</string>
+    <string name="park_field_guide">Field Guide</string>
+    <string name="park_summary">Explore south-eastern Australia\'s unique and diverse wildlife at home or in the field. This app combines detailed animal descriptions with stunning imagery and sounds to provide a valuable reference that can be used in urban, bush and coastal environments.</string>
+    
+    <!-- general app -->
+    <string name="app_name">VIC Field Guide</string>
+    <string name="app_copyright_pv">Parks Victoria</string>
+    <string name="app_copyright_mv">Museum Victoria</string>
+    
+    <!-- menu -->
+    <string name="menu_settings">Settings</string>
+    
+    <!-- titles -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    
+    <!-- search -->
+    <string name="search_hint">e.g. Fish</string>
+    <!-- Shown above search results when we receive a search request. -->
+    <plurals name="search_results">
+        <item quantity="one">%1$d result for \"%2$s\": </item>
+        <item quantity="other">%1$d results for \"%2$s\": </item>
+    </plurals>
+    <!-- Search failure message. -->
+    <string name="no_results">No species found for \"%s\"</string>
+    
+    <!-- splash/download ui -->
+    <string name="text_paused_cellular">Would you like to enable downloading over cellular connections? Depending on your data plan, this may cost you money.</string>
+    <string name="text_paused_cellular_2">If you choose not to enable downloading over cellular connections, the download will automatically resume when wi-fi is available.</string>
+    <string name="text_button_resume_cellular">Resume download</string>
+    <string name="text_button_wifi_settings">Wi-Fi settings</string>
+    <string name="text_verifying_download">Verifying Download</string>
+    <string name="text_validation_complete">Resource file validation complete.  Select OK to exit.</string>
+    <string name="text_validation_failed">Resource file validation failed.</string>
+    <string name="text_button_pause">Pause Download</string>
+    <string name="text_button_resume">Resume Download</string>
+    <string name="text_button_cancel">Cancel</string>
+    <string name="text_button_cancel_verify">Cancel Verification</string>
+    
+    
+    <!-- Preferences -->
+    <string name="pref_analytics_title">Send usage statistics</string>
+    <string name="pref_analytics_summary">Send your usage statistics anonymously for improvements</string>
+    <string name="pref_about_title">About</string>
+    <string name="pref_about_summary">About the Field Guide</string>
+    <string name="pref_licence_title">Open source licences</string>
+    <string name="pref_licence_summary">Various open source licences included as part of the Field Guide</string>
+    <string name="pref_version_title">Version</string>
+    <string name="pref_version_summary">1.0</string>
+    
+    
+    <!-- data -->
+    <string name="distributioninfo">This map is based on specimens held in Australia\'s museums. Museums do not collect from all possible locations so these maps may underestimate the actual range of the species. The collections also include historical records, so the map may show localities where a species was once found but is no longer. Interpret this map as \'the species is found within the green or blue highlighted areas where suitable habitat occurs\'.</string>
+    <string name="aboutdistribution">
+        <![CDATA[
+            <html>
+            <head>
+            <style type="text/css">
+                body {color: #ffffff; font: 15px/23px "Helvetica Neue"; }
+                section { border-top: 1px solid rgba(190,210,159,0.75); width: 100%; padding: 8px 0 0 0; margin: 0 auto; clear: both;}
+                p { margin: 0 0 20px 10; }
+                a { color: #749f36; text-decoration: none; }
+            </style>
+            </head>
+            <body>
+            	<h1>About Distribution</h1>
+            	<section>
+                	<p>This map is based on specimens held in Australia&#8217;s museums. Museums do not collect from all possible locations so these maps may underestimate the actual range of the species. The collections also include historical records, so the map may show localities where a species was once found but is no longer. Interpret this map as &#8216;the species is found within the green or blue highlighted areas where suitable habitat occurs&#8217;.</p>
+                </section>
+            </body>
+            </html>
+        ]]>
+    </string>
+    
+    
+    <string name="threatenedstatusinfo">
+        <![CDATA[
+                <p>Victorian status is drawn from the <a href="http://www.dse.vic.gov.au/plants-and-animals/native-plants-and-animals/threatened-species-and-communities/threatened-species-advisory-lists">DSE Advisory Lists of threatened fauna</a>.</p>
+                <p>Australian status is drawn from the <a href="http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl">Environment Protection and Biodiversity Conservation Act 1999</a>.</p>
+                <p>Worldwide status is drawn from the <a href="http://www.iucnredlist.org/">IUCN Red List</a>.</p>
+        ]]>
+    </string>
+    <string name="aboutthreatenedstatus">
+        <![CDATA[
+            <html>
+            <head>
+            <style type="text/css">
+                body {color: #ffffff; font: 15px/23px "Helvetica Neue"; }
+                section { border-top: 1px solid rgba(190,210,159,0.75); width: 100%; padding: 8px 0 0 0; margin: 0 auto; clear: both;}
+                p { margin: 0 0 20px 10; }
+                a { color: #749f36; text-decoration: none; }
+            </style>
+            </head>
+            <body>
+            	<h1>About Threatened Status</h1>
+            	<section>
+                	<p>Victorian status is drawn from the <a href="http://www.dse.vic.gov.au/plants-and-animals/native-plants-and-animals/threatened-species-and-communities/threatened-species-advisory-lists">DSE Advisory Lists of threatened fauna</a>.</p>
+                	<p>Australian status is drawn from the <a href="http://www.environment.gov.au/cgi-bin/sprat/public/sprat.pl">Environment Protection and Biodiversity Conservation Act 1999</a>.</p>
+                	<p>Worldwide status is drawn from the <a href="http://www.iucnredlist.org/">IUCN Red List</a>.</p>
+                </section>
+            </body>
+            </html>
+        ]]>
+    </string>
+    
+    
+    <!-- open source licence info -->
+    <string name="opensourcelicences">
+        <![CDATA[
+        	<html>
+        	<head>
+        	<style type="text/css">
+                body {color: #ffffff; font: 15px/23px "Helvetica Neue"; }
+                section { border-top: 1px solid rgba(190,210,159,0.75); width: 100%; padding: 8px 0 0 0; margin: 0 auto; clear: both;}
+                p { margin: 0 0 20px 10; }
+                a { color: #749f36; text-decoration: none; }
+        	</style>
+        	</head>
+        	<body>
+        	
+        	   <h1>Museum Victoria&#8217;s Field Guide to Victorian Fauna</h1>
+        	   <h4>Copyright &copy; 2013 Museum Victoria</h4>
+        	   <section>
+					<p>The Field Guide is built using open source software:</p>
+        	   		<ul>
+        	       		<li><a href="http://actionbarsherlock.com/">ActionBarSherlock</a> - <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a></li>
+        	       		<li><a href="https://github.com/sephiroth74/ImageViewZoom">ImageViewZoom</a> - <a href="http://opensource.org/licenses/mit-license.php">MIT License</a></li>
+        	       		<li><a href="http://source.android.com/">The Android Open Source Project</a> - <a href="http://source.android.com/source/licenses.html">(mainly) Apache License</a>
+        	   		</ul>
+        	   </section>
+            </body>
+            </html>
+        ]]>
+    </string>
+    
+</resources>

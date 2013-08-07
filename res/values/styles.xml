@@ -1,0 +1,112 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="Theme.FieldGuide" parent="@style/Theme.Sherlock">
+        <item name="actionBarStyle">@style/Theme.FieldGuide.ActionBar</item>
+        
+        <item name="dropDownListViewStyle">@style/Theme.FieldGuide.DropDownListView</item>
+        <item name="android:dropDownListViewStyle">@style/Theme.FieldGuide.DropDownListView</item>
+        
+        <item name="actionDropDownStyle">@style/Theme.FieldGuide.DropDownNav</item>
+        
+    </style>
+    
+    <style name="Theme.FieldGuide.FullScreen" parent="Theme.Sherlock.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <style name="Theme.FieldGuide.Dialog" parent="Theme.Sherlock.Dialog">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    
+    <!-- actionbar styles -->
+    <style name="Theme.FieldGuide.ActionBar" parent="@style/Widget.Sherlock.ActionBar.Solid">
+
+        <item name="background">@drawable/actionbar_gradient</item>
+        <item name="backgroundStacked">@drawable/actionbar_gradient</item>
+        <item name="backgroundSplit">@drawable/actionbar_gradient</item>
+        <!-- <item name="progressBarStyle">@style/example_ProgressBar</item> -->
+
+        <item name="android:background">@drawable/actionbar_gradient</item>
+        <!-- <item name="android:progressBarStyle">@style/example_ProgressBar</item> -->
+    </style>
+    
+    <style name="Theme.FieldGuide.DropDownNav" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="background">@drawable/spinner_background_ab_example</item>
+        <item name="android:background">@drawable/spinner_background_ab_example</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_example</item>
+    </style>
+
+    <style name="Theme.FieldGuide.DropDownListView" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_example</item>
+    </style>
+
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.example.widget" parent="@style/Theme.Sherlock">
+        <item name="dropDownListViewStyle">@style/Theme.FieldGuide.DropDownListView</item>
+        <item name="android:dropDownListViewStyle">@style/Theme.FieldGuide.DropDownListView</item>
+        <!--  
+        <item name="popupMenuStyle">@style/example_PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/example_PopupMenu</item>
+        -->
+    </style>
+    
+    
+    <!-- text styles -->    
+    <style name="SpeciesDetailsSubheading">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">19dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">#eaeaea</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+    
+    <style name="SpeciesDetailsText">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+    
+    
+    <style name="FieldGuide_ActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="background">@drawable/tab_indicator_ab</item>
+        <item name="android:background">@drawable/tab_indicator_ab</item>
+    </style>
+    
+    <!-- table styles -->
+    <style name="tablerowstyle">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">#1a1a1a</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+
+    <style name="tablerowstylealt">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">#242424</item>
+        <item name="android:layout_margin">0.5dp</item>
+    </style>
+</resources>

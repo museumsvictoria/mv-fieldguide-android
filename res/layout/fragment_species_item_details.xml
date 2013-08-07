@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/imagepager"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/imageindicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" />
+        </LinearLayout>
+        -->
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/speciesimages"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/sdCommonname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Common name"
+            android:textColor="@color/headingText"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sdSpeciesname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="scientific name"
+            android:textColor="@color/headingText"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+                
+            </LinearLayout>
+            
+            <ImageButton 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_audio"/>
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/horizontalline"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/headingText" /> <!-- #146671 -->
+
+        <!-- Distinctive Markings -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Distinctive Markings" />
+
+        <TextView
+            android:id="@+id/sdDistinctive"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Distinctive Markings" />
+
+        <!-- otherNames -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="otherNamesLabel"
+            android:id="@+id/otherNamesLabel"
+            android:text="Other Common Names" />
+
+        <TextView
+            android:id="@+id/sdOtherNames"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Common Names list" />
+
+        <!-- Identifying Characteristics -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Identifying Characteristics" />
+
+        <TextView
+            android:id="@+id/sdDescription"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Strongly laterally flattened species, with spikes along the edge of some of the segments of the abdomen and edges of the abdominal side-plates. Seven pairs of legs, first two chelate (with claws). Pale pink to bright red. Up to 20 mm long." />
+
+        <!-- Biology -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Biology" />
+
+        <TextView
+            android:id="@+id/sdBiology"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Biology info" />
+
+        <!-- Diet -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="dietLabel"
+            android:id="@+id/dietLabel"
+            android:text="Diet" />
+
+        <TextView
+            android:id="@+id/sdDiet"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet info" />
+
+        <!-- Habitat -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Habitat" />
+
+        <TextView
+            android:id="@+id/sdHabitat"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Habitat info" />
+
+        <!-- Bite -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="biteLabel"
+            android:id="@+id/biteLabel"
+            android:text="Harmful" />
+
+        <TextView
+            android:id="@+id/sdBite"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Harmful info" />
+        
+        <!-- Native Status -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Global Dispersal" />
+
+        <TextView
+            android:id="@+id/sdNativeStatus"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Native Status info" />
+
+        <!-- Butterfly flights -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="commercialLabel"
+            android:id="@+id/flightLabel"
+            android:text="Flight times" />
+
+        <TextView
+            android:id="@+id/sdFlight"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Everyday I'm shuffling." />
+        
+        <!-- Commercial Species -->
+
+        <TextView
+            style="@style/SpeciesDetailsSubheading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="commercialLabel"
+            android:id="@+id/commercialLabel"
+            android:text="Commercial Species" />
+
+        <TextView
+            android:id="@+id/sdCommercial"
+            style="@style/SpeciesDetailsText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Commercial Species info" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbox"
+            android:padding="0.5dp" >
+
+            <TableRow style="@style/tablerowstyle" >
+
+                <TextView
+                    style="@style/SpeciesDetailsSubheading"
+                    android:paddingTop="2dp"
+                    android:text="Taxonomy" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstylealt" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Phylum:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaPhylum"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phylum" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstyle" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Class:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaClass"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Class" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstylealt" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Order:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaOrder"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstyle" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Family:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaFamily"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Family" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstylealt" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Genus:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaGenus"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genus"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstyle" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Species:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaSpecies"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Species"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow style="@style/tablerowstylealt" >
+
+                <TextView
+                    style="@style/SpeciesDetailsText"
+                    android:text="Subspecies:" />
+
+                <TextView
+                    android:id="@+id/sdTaxaSubspecies"
+                    style="@style/SpeciesDetailsText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subspecies"
+                    android:textStyle="italic" />
+            </TableRow>
+            </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

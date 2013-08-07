@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--  
+	<CheckBoxPreference 
+	    android:key="pref_key_send_analytics"
+	    android:summary="@string/pref_analytics_summary"
+	    android:title="@string/pref_analytics_title"
+	    android:defaultValue="true"
+	    />
+	-->
+	<!--  
+	<Preference android:title="@string/pref_about_title"
+	    android:summary="@string/pref_about_summary">
+	    <intent action="android.intent.action.VIEW"
+	        android:data="http://www.google.com.au" />
+	</Preference>
+	-->
+	
+	<Preference android:title="@string/pref_about_title"
+	    android:summary="@string/pref_about_summary">
+	    <intent android:action="android.intent.action.VIEW"
+             android:targetPackage="au.com.museumvictoria.fieldguide.vic"
+             android:targetClass="au.com.museumvictoria.fieldguide.vic.ui.DisplayInfoActivity">
+             <extra android:name="pagetitle" android:value="@string/pref_about_title" />
+             <extra android:name="pageurl" android:value="about" />
+        </intent>
+	</Preference>
+	<Preference android:title="@string/pref_licence_title"
+	    android:summary="@string/pref_licence_summary">
+	    <intent android:action="android.intent.action.VIEW"
+             android:targetPackage="au.com.museumvictoria.fieldguide.vic"
+             android:targetClass="au.com.museumvictoria.fieldguide.vic.ui.DisplayInfoActivity">
+             <extra android:name="pagetitle" android:value="@string/pref_licence_title" />
+             <extra android:name="pageurl" android:value="opensourcelicences" />
+        </intent>
+	    	</Preference>
+	<Preference android:title="@string/pref_version_title"
+	    android:summary="@string/pref_version_summary">
+	    
+	</Preference>
+	
+</PreferenceScreen>

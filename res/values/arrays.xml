@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string-array name="sections">
+        <item>Home</item>
+        <item>Species</item>
+        <item>About App</item>
+    </string-array>
+    
+    <string-array name="speciestabs">
+        <item>Groups</item>
+        <item>Alphabetical</item>
+    </string-array>
+    
+    <string-array name="tab_details_titles">
+        <item>Details</item>
+        <item>Commonly Seen</item>
+        <item>Scarcity</item>
+    </string-array>
+    
+    
+    <string-array name="list_images_gallery">
+        <item>01_Eagles_Nest_rock_formation_looking_west_Photo_by_Mark_Norman_Museum_Victoria.jpg</item>
+    </string-array>
+    
+    <string-array name="list_images_maps">
+        <item>01_Bunurong_Marine_National_Park_located_midway_between_Phillip_Island_and_Wilsons_Promontory_on_the_eastern_coast_of_Victoria.jpg</item>
+    </string-array>
+        
+</resources>
